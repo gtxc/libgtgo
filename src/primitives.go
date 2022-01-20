@@ -23,6 +23,7 @@ func main() {
 	// byte
 	// arithmetic operations on different type not allowed (e.g. int8 + int 32)
 	// to make it work, use type-casting
+	// bitwise operations apply as the same as C
 	// bit shifting applies as the same as C
 	a := 8              // 2^3
 	fmt.Println(a << 3) // 2^3 * 2^3 = 2^6
