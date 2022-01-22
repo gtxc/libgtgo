@@ -1,0 +1,27 @@
+/*
+ * Created by gt on 1/22/22 - 4:27 AM.
+ * Copyright (c) 2022 GTXC. All rights reserved.
+ */
+
+package main
+
+import "fmt"
+
+func main() {
+	myInt := IntCounter(0)
+	var inc Incrementer = &myInt
+	for i := 0; i < 10; i++ {
+		fmt.Println(inc.Increment())
+	}
+}
+
+type Incrementer interface {
+	Increment() int
+}
+
+type IntCounter int
+
+func (ic *IntCounter) Increment() int {
+	*ic++
+	return int(*ic)
+}
