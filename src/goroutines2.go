@@ -1,10 +1,9 @@
 /*
  * Created by gt on 1/22/22 - 5:11 AM.
  * Copyright (c) 2022 GTXC. All rights reserved.
- *
- * goroutines are racing each other
  */
 
+// goroutines are racing each other
 // go run - race src/main.go
 
 package main
